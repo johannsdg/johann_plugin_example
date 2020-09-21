@@ -1,0 +1,38 @@
+aiohttp==3.6.2            # via johann
+amqp==2.6.1               # via kombu
+async-timeout==3.0.1      # via aiohttp
+attrs==20.2.0             # via aiohttp
+billiard==3.6.3.0         # via celery
+celery==4.4.6             # via johann
+certifi==2020.6.20        # via requests
+chardet==3.0.4            # via aiohttp, requests
+dataclasses==0.6          # via johann, pydantic
+docker==4.3.1             # via johann
+fastapi==0.61.1           # via johann
+future==0.18.2            # via celery
+idna-ssl==1.1.0           # via aiohttp
+idna==2.10                # via idna-ssl, requests, yarl
+importlib-metadata==1.7.0  # via kombu
+johann==0.1.1a1           # via johann_plugin_example (setup.py)
+kombu==4.6.11             # via celery
+logzero==1.5.0            # via johann
+marshmallow-enum==1.5.1   # via johann
+marshmallow==3.8.0        # via johann, marshmallow-enum
+multidict==4.7.6          # via aiohttp, yarl
+natsort==6.2.1            # via johann
+numpy==1.19.2             # via johann_plugin_example (setup.py)
+psutil==5.7.2             # via johann
+pydantic==1.6.1           # via fastapi
+python-dotenv==0.10.5     # via johann
+pytz==2020.1              # via celery
+redis==3.5.3              # via johann
+requests==2.24.0          # via docker, johann
+ruamel.yaml==0.15.100     # via johann
+six==1.15.0               # via docker, websocket-client
+starlette==0.13.6         # via fastapi
+typing-extensions==3.7.4.3  # via aiohttp, yarl
+urllib3==1.25.10          # via requests
+vine==1.3.0               # via amqp, celery
+websocket-client==0.57.0  # via docker
+yarl==1.5.1               # via aiohttp
+zipp==3.1.0               # via importlib-metadata

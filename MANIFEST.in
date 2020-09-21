@@ -1,0 +1,2 @@
+include johann_plugin_example/scores/*.yml
+include johann_plugin_example/scores/*.yaml
