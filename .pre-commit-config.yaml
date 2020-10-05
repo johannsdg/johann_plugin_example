@@ -57,19 +57,19 @@ repos:
       - id: pip-compile
         args: [
             --quiet,
-            --no-header,
-            #--generate-hashes,
+            --generate-hashes,
             --no-emit-index-url,
+            --pip-args=--isolated, # ignore PIP_INDEX_URL, etc
           ]
         files: ^((requirements(-.*)?\.(in|txt))|setup.py)$
       - id: pip-compile
         name: pip-compile-dev
         args: [
             --quiet,
-            --allow-unsafe,
-            --no-header,
-            #--generate-hashes,
+            --generate-hashes,
             --no-emit-index-url,
+            --pip-args=--isolated, # ignore PIP_INDEX_URL, etc
+            --allow-unsafe,
             --output-file=requirements-dev.txt,
             requirements-dev.in,
           ]
@@ -109,13 +109,13 @@ repos:
         exclude: |
           (?x)^(
             \..+\.cfg|
+            \..+\.toml|
+            .*\.in|
             .*\.md|
-            .*\.toml|
+            .*\.txt|
             .gitignore|
             AUTHORS|
             LICENSE|
-            MANIFEST.in|
-            requirements.*\.(in|txt)|
           )$
       - id: mypy-local
         name: mypy-local
