@@ -9,7 +9,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="johann_plugin_example",
-    description="An example plugin for Johann",
+    description="An example of a plugin for Johann",
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Jeffrey James",
@@ -26,5 +26,5 @@ setuptools.setup(
         "Operating System :: POSIX :: Linux",
     ],
     python_requires=">=3.6, <4",
-    install_requires=["johann>=0.1.1a1", "numpy"],
+    install_requires=["johann>=0.2.0a0", "numpy"],
 )
